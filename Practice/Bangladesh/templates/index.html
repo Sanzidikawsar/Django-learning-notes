@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bangladesh..</title>
+</head>
+
+<style>
+    li { display:table; margin:0 auto; background: green}
+    h2 { margin: 0 auto; display:table; background: green }
+    body { background-color: lightblue }
+</style>
+
+
+<body>
+    <h2>Select the division to see districts:</h2><br><br>
+    {% for div in divisions %}
+        <li><a href="http://127.0.0.1:8000/{{ div.division }}">{{ div.division }}</a></li><br>
+    {% endfor %}
+</body>
+</html>
